@@ -7,14 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
 namespace Paxidis_travel
 {
     public partial class Form2 : Form
     {
+        Thread thr;
         public Form2()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            thr = new Thread(opennewform2);
+            thr.SetApartmentState(ApartmentState.STA);
+            thr.Start();
+
+        }
+
+        private void opennewform2()
+        {
+            Application.Run(new Form1());
         }
     }
 }

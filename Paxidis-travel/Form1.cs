@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
 namespace Paxidis_travel
 {
     public partial class Form1 : Form
     {
+        Thread th;
         public Form1()
         {
             InitializeComponent();
@@ -26,9 +27,10 @@ namespace Paxidis_travel
         {
             if (textBox1.Text == "user" && textBox2.Text == "pass")
             {
-                Form2 nea_forma = new Form2();
-                nea_forma.Show();
-
+                this.Close();
+                th = new Thread(opennewform);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
             }
             else
             {
@@ -37,6 +39,11 @@ namespace Paxidis_travel
                 textBox2.Text = "";
 
             } 
+        }
+
+        private void opennewform()
+        {
+            Application.Run(new Form2());
         }
     }
 }

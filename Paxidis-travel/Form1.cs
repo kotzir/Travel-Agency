@@ -27,6 +27,7 @@ namespace Paxidis_travel
         {
             if (textBox1.Text == "user" && textBox2.Text == "pass")
             {
+
                 this.Close();
                 th = new Thread(opennewform);
                 th.SetApartmentState(ApartmentState.STA);

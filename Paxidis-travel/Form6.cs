@@ -26,5 +26,28 @@ namespace Paxidis_travel
         {
 
         }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(monoklino.Text) <= 0)
+            {
+                monoradio.Enabled = false;
+            }
+
+            if (Convert.ToInt32(diklino.Text) <= 0)
+            {
+                dikradio.Enabled = false;
+            }
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monoklino_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

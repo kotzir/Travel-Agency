@@ -12,7 +12,7 @@ namespace Paxidis_travel
 {
     public partial class Form1 : Form
     {
-        Thread th;
+        
         public Form1()
         {
             InitializeComponent();
@@ -28,10 +28,9 @@ namespace Paxidis_travel
             if (textBox1.Text == "user" && textBox2.Text == "pass")
             {
 
-                this.Close();
-                th = new Thread(opennewform);
-                th.SetApartmentState(ApartmentState.STA);
-                th.Start();
+                this.Hide();
+                Form2 menu = new Form2();
+                menu.Show();
             }
             else
             {
@@ -42,9 +41,32 @@ namespace Paxidis_travel
             } 
         }
 
-        private void opennewform()
+     
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            Application.Run(new Form2());
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (textBox1.Text == "user" && textBox2.Text == "pass")
+                {
+
+                    this.Hide();
+                    Form2 menu = new Form2();
+                    menu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("ΠΑΡΑΚΑΛΩ ΕΛΕΞΤΕ ΤΑ ΠΕΔΙΑ");
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+
+                } 
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -45,6 +45,7 @@
             this.paketo = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,7 +131,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 229);
+            this.button1.Location = new System.Drawing.Point(268, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -140,7 +141,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(478, 229);
+            this.button2.Location = new System.Drawing.Point(351, 149);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
@@ -149,7 +150,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(342, 229);
+            this.button3.Location = new System.Drawing.Point(469, 149);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(89, 23);
             this.button3.TabIndex = 12;
@@ -174,7 +175,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(361, 286);
+            this.button4.Location = new System.Drawing.Point(122, 149);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 15;
@@ -183,18 +184,32 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(243, 286);
+            this.button5.Location = new System.Drawing.Point(6, 149);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 23);
             this.button5.TabIndex = 16;
             this.button5.Text = "Προηγούμενο";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Brown;
+            this.button6.Location = new System.Drawing.Point(490, 178);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(91, 41);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Μενού";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 345);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(582, 223);
+            this.ControlBox = false;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.paketo);
@@ -212,6 +227,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form3";
             this.Text = "Διαχείριση Πελατών";
             this.ResumeLayout(false);
@@ -238,5 +255,6 @@
         private System.Windows.Forms.TextBox paketo;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

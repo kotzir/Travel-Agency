@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Paxidis_travel
 {
-    public partial class Form4 : Form
+    public partial class Form10 : Form
     {
-        public Form4()
+        public Form10()
         {
             InitializeComponent();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form2 menou = new Form2();
-            menou.Show();
         }
     }
 }

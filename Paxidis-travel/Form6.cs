@@ -29,7 +29,7 @@ namespace Paxidis_travel
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(monoklino.Text) <= 0)
+            /*if (Convert.ToInt32(monoklino.Text) <= 0)
             {
                 monoradio.Enabled = false;
             }
@@ -37,7 +37,7 @@ namespace Paxidis_travel
             if (Convert.ToInt32(diklino.Text) <= 0)
             {
                 dikradio.Enabled = false;
-            }
+            }*/
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -48,6 +48,13 @@ namespace Paxidis_travel
         private void monoklino_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 menou = new Form2();
+            menou.Show();
         }
     }
 }

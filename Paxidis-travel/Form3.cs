@@ -68,7 +68,7 @@ namespace Paxidis_travel
                 OleDbConnection connection = new OleDbConnection();
                 OleDbCommand command = new OleDbCommand();
                 DataTable dTable = new DataTable();
-                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Kotzir\Desktop\Travel-Agency-master\db\db.accdb;
+                connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Kotzir\Desktop\Travel-Agency-master\db\db.accdb;
                  Persist Security Info=False;";
                 connection.Open();
                 command.Connection = connection;

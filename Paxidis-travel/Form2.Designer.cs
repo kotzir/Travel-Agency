@@ -114,6 +114,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Στοιχεία Οχημάτων";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -124,6 +125,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Κρατήσεις αεροπορικών και ενοικιαζόμενων αυτοκινήτων";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -134,6 +136,7 @@
             this.button9.TabIndex = 8;
             this.button9.Text = "Στοιχεία Αρχηγών Εκδρομών";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form2
             // 

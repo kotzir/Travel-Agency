@@ -21,5 +21,12 @@ namespace Paxidis_travel
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 menou = new Form2();
+            menou.Show();
+        }
     }
 }

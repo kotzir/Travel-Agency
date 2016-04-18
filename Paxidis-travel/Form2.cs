@@ -25,8 +25,6 @@ namespace Paxidis_travel
 
         }
 
- 
-
        
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -66,7 +64,30 @@ namespace Paxidis_travel
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form8 neaforma = new Form8();
+            neaforma.Show();
+        }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form7 neaforma = new Form7();
+            neaforma.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form9 neaforma = new Form9();
+            neaforma.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form10 neaforma = new Form10();
+            neaforma.Show();
         }
 
        

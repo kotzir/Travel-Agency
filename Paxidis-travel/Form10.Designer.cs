@@ -47,6 +47,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -114,7 +115,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(47, 378);
+            this.button1.Location = new System.Drawing.Point(47, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 7;
@@ -123,7 +124,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(173, 428);
+            this.button2.Location = new System.Drawing.Point(173, 366);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -132,7 +133,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(173, 378);
+            this.button3.Location = new System.Drawing.Point(173, 316);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;
@@ -141,7 +142,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(47, 428);
+            this.button4.Location = new System.Drawing.Point(47, 366);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 9;
@@ -150,7 +151,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(272, 428);
+            this.button5.Location = new System.Drawing.Point(272, 366);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(82, 23);
             this.button5.TabIndex = 10;
@@ -206,12 +207,24 @@
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 17;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Brown;
+            this.button6.Location = new System.Drawing.Point(409, 348);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(91, 41);
+            this.button6.TabIndex = 23;
+            this.button6.Text = "Μενού";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 463);
+            this.ClientSize = new System.Drawing.Size(523, 403);
             this.ControlBox = false;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -260,5 +273,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button6;
     }
 }
